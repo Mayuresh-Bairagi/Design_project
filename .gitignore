@@ -1,0 +1,11 @@
+main.ipynb
+__pycache__/
+.env
+models\__pycache__
+models\fruits_quality_classification\__pycache__
+models\fruits_quality_classification\test.ipynb
+models\groq_model\__pycache__
+models\groq_model\groq.ipynb
+virtualenv
+models\fruits_quality_classification\dataset
+models\groq_model\groq.ipynb

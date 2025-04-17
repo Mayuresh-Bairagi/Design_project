@@ -1,0 +1,13 @@
+ultralytics
+opencv-python
+numpy
+fastapi
+tensorflow
+scikit-learn
+matplotlib
+langchain[groq]
+groq
+langchain
+langchain_community
+python-dotenv
+pathlib
