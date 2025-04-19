@@ -1,92 +1,92 @@
 # 🍌 Banana Crop Yield Prediction & Recommendation System
 
-A deep learning-powered system that predicts banana crop count and quality, recommends farming decisions, and aims to forecast real-time crop pricing — all wrapped into a FastAPI backend for integration.
+A deep learning-based project for analyzing banana crop yield through object detection and quality classification — with a future goal of real-time market price forecasting. Powered by FastAPI for backend support.
 
 ---
 
-## 🎯 Project Objective
+## 🎯 Objective
 
-This project is focused on building an end-to-end solution for **banana crop yield prediction** by:
+This project aims to provide a comprehensive solution for **banana crop yield prediction** using computer vision and AI. The core functionalities include:
 
-- Counting the number of bananas using **YOLO object detection**
-- Assessing banana quality using a **MobileNet CNN (pretrained)**
-- Providing intelligent crop recommendations using a **Groq model**
-- (Upcoming) Predicting approximate market price using **web scraping** and **real-time price analysis**
+- **Banana Counting** using **YOLO**
+- **Banana Quality Classification** using a **MobileNet CNN pretrained model**
+- **Crop Recommendation System** powered by **Groq model**
+- *(Upcoming)* Real-time price prediction using **web scraping** and **market analysis**
 
 ---
 
-## 🔍 Key Features
+## 🧩 Features
 
-- 🍌 **Banana Counting with YOLO** – Detects and counts bananas in real-world images  
-- ✅ **Banana Quality Classification** – Uses a MobileNet-based CNN to classify quality levels  
-- 📈 **Crop Recommendation Engine** – Leverages Groq’s high-speed model inference  
-- 🌐 **Real-Time Price Forecasting (Upcoming)** – Uses web scraping to suggest market price for harvested crops  
-- ⚡ **FastAPI Backend** – Provides APIs to integrate model predictions with frontend or dashboards  
+- 🍌 **YOLO Detection** – Count bananas in input images  
+- 🟢 **Quality Check** – Classify bananas into quality grades using MobileNet  
+- 🧠 **Smart Recommendation** – Suggest action based on yield and quality  
+- 📈 **Price Prediction (Planned)** – Real-time market integration via web scraping  
+- 🚀 **FastAPI Backend** – Lightweight, efficient API server  
 
 ---
 
 ## 🧠 Tech Stack
 
-| Layer             | Tech Used                  |
-|------------------|----------------------------|
-| Detection        | YOLO (You Only Look Once)  |
-| Quality Analysis | MobileNet CNN              |
-| Recommendation   | Groq Model                 |
-| Backend          | FastAPI                    |
-| Upcoming         | Web Scraping (BeautifulSoup / Selenium), Price Prediction Model |
+| Purpose               | Technology         |
+|----------------------|--------------------|
+| Detection             | YOLOv5             |
+| Classification        | MobileNet (CNN)    |
+| Recommendation        | Groq Inference     |
+| Backend               | FastAPI            |
+| Future Integration    | Web Scraping (e.g., BeautifulSoup) |
 
 ---
 
-## 📁 Project Structure (Example)
+## 🗂️ Project Structure
 
 ```
 Design_project/
-├── yolo_model/            # YOLO model for banana counting
-├── quality_model/         # MobileNet-based quality classification
-├── groq_model/            # Groq model for recommendations
-├── app/                   # FastAPI backend logic
-│   ├── main.py
-│   └── routes/
-├── utils/                 # Preprocessing, postprocessing scripts
-├── data/                  # Sample images and datasets
-├── requirements.txt
-└── README.md
+├── models/               # Trained YOLO and MobileNet models
+├── temp_uploads/         # Temporary image uploads
+├── .gitignore            # Ignored files
+├── README.md             # Project documentation
+├── app.py                # Main backend app using FastAPI
+└── requirements.txt      # List of required Python packages
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🚀 How to Run
 
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/Mayuresh-Bairagi/Design_project.git
-   cd Design_project
-   ```
+### 1. Clone the Repository
 
-2. **Create virtual environment**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate 
-   ```
+```bash
+git clone https://github.com/Mayuresh-Bairagi/Design_project.git
+cd Design_project
+```
 
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+### 2. Create Virtual Environment
 
-4. **Run FastAPI backend**
-   ```bash
-   uvicorn app.main:app --reload
-   ```
+```bash
+python -m venv venv
+source venv/bin/activate        # Linux/macOS
+venv\Scripts\activate         # Windows
+```
 
----
+### 3. Install Dependencies
 
-## 📊 Future Plans
+```bash
+pip install -r requirements.txt
+```
 
-- ✅ Real-time banana price prediction  
-- ✅ Web scraping from agri-market sites  
-- ✅ Integration with user dashboard / frontend  
-- ✅ Model optimization for deployment on edge devices  
+### 4. Run FastAPI App
+
+```bash
+uvicorn app:app --reload
+```
+
+Visit the API docs at: `http://127.0.0.1:8000/docs`
 
 ---
 
+## 🚧 Upcoming Features
+
+- 🌐 Real-time banana price prediction using web scraping  
+- 📊 Visual dashboard for farmers or suppliers  
+- 🤖 On-device AI optimization (edge deployment)  
+- 🌾 Expansion to other crops  
